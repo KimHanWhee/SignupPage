@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mySignin.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 아이디,비번,생일,이름,이메일,전화번호,성별 -->
+    <div id="mySignin">
+        <h1 id="title">회원가입</h1>
+        <div id="mySignin-box">
+            <form id="mySignin-form" method="POST">
+                <div id="mySignin-id">
+                    <label for="mySignin-id_input">아이디</label>
+                        <input type="text" name="mySignin-id_input" id="mySignin-id_input" placeholder="아이디를 입력해주세요." required />
+                </div>
+                <div id="mySignin-pw">
+                    <label for="mySignin-pw_input">비밀번호</label>
+                        <input type="password" name="mySignin-pw_input" id="mySignin-pw_input"  pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,16}$" placeholder="비밀번호를 입력해주세요." required />
+                </div>
+                <div id="info">
+                    <span>※ 최소 8자리에서 최대 16자리까지 숫자, 영문, 특수문자 각 1개 이상 포함해주세요.</span>
+                </div>
+                <div id="mySignin-pwcheck">
+                    <label for="mySignin-pwcheck_input">비밀번호 확인</label>
+                        <input type="password" name="mySignin-pwcheck_input" id="mySignin-pwcheck_input" placeholder="비밀번호를 다시 입력해주세요." required />
+                </div>
+                <div id="mySignin-name">
+                    <label for="mySignin-name_input">이름</label>
+                        <input type="password" name="mySignin-name_input" id="mySignin-name_input" placeholder="이름을 입력해주세요." required />
+                </div>
+                <div id="mySignin-birth">
+                    <label for="mySignin-birth_year">생년월일</label>
+                        <div>
+                            <input input type="text" pattern="\d*" name="birth" id="mySignin-birth_year" maxlength="4" placeholder="년(4자)" required/>
+                            <select name="birth" id="mySignin-birth_month" required>
+                                <option selected>월</option>
+                                <option value="1">1월</option>
+                                <option value="2">2월</option>
+                                <option value="3">3월</option>
+                                <option value="4">4월</option>
+                                <option value="5">5월</option>
+                                <option value="6">6월</option>
+                                <option value="7">7월</option>
+                                <option value="8">8월</option>
+                                <option value="9">9월</option>
+                                <option value="10">10월</option>
+                                <option value="11">11월</option>
+                                <option value="12">12월</option>
+                            </select>
+                            <input input type="text" pattern="\d*" name="birth" id="mySignin-birth_day" maxlength="2" placeholder="일" required/>
+                        </div>
+                </div>
+                <div id="mySignin-gender">
+                    <label for="mySignin-gender_input">성별</label>
+                    <select name="gender" id="mySignin-gender_input">
+                        <option value="선택안함" selected>선택안함</option>
+                        <option value="남">남</option>
+                        <option value="여">여</option>
+                    </select>
+                </div>
+                <div id="mySignin-email">
+                    <label for="mySignin-email_input">이메일</label>
+                        <input type="email" name="mySignin-email_input" id="mySignin-email_input" placeholder="이메일을 입력해주세요." required />
+                </div>
+                <div id="mySignin-phone">
+                    <label for="mySignin-phone_input">전화번호</label>
+                    <select name="phone" id="mySignin-phone_loc">
+                        <option value="대한민국" selected>대한민국 +82</option>
+                    </select>
+                    <input type="text" name="phone" id="mySignin-phone_input" pattern="[0-9]{2,3}[0-9]{3,4}[0-9]{3,4}" maxlength="12" placeholder="전화번호를 입력해주세요." required />
+                    <button id="mySignin-num">인증번호 받기</button>
+                    <div id="info">
+                        <span>※ ***-****-**** 혹은 **-***-****</span>
+                    </div>
+                <input type="number" name="num" id="mySignin-num_input" placeholder="인증번호를 입력해주세요." required />
+                </div>
+                <button type="submit" id="signin-btn">회원가입</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

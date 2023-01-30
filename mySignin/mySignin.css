@@ -1,0 +1,118 @@
+body{
+    background-image: url("./bgimage.jpg");
+}
+input, select{
+    width: 500px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 2px solid rgb(154, 154, 154);
+    background: transparent;
+}
+label{
+    color: white;
+    text-shadow: .5px 0 rgb(154, 154, 154);
+}
+input:focus, select:focus{
+    outline: none;
+}
+input::placeholder, select{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0 rgb(126, 126, 126);
+    
+}
+input:focus::placeholder{
+    color: transparent;
+    opacity: 0;
+}
+select:hover{
+    cursor: pointer;
+}
+select:focus{
+    color: black;
+}
+#title{
+    color: white;
+}
+#info{
+    width: 500px;
+}
+span{
+    margin-top: 5px;
+    text-align: left;
+    font-size: 12px;
+    color: whitesmoke;
+
+}
+#mySignin{
+    text-align: center;
+}
+#mySignin-box{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font-weight: 600;
+}
+#mySignin-form{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: #c598ff60;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+#mySignin-id, #mySignin-pw, #mySignin-pwcheck, #mySignin-name, #mySignin-birth, #mySignin-gender,
+#mySignin-email, #mySignin-phone{
+    position: relative;
+    margin-top: 30px;
+}
+
+#mySignin-birth_month{
+    vertical-align: middle;
+    margin-top: 3px;
+}
+#mySignin-birth_year, #mySignin-birth_month, #mySignin-birth_day{
+    width: 160.2px;
+}
+#mySignin-phone_input{
+    margin-top: 20px;
+    width: 380px;
+}
+#mySignin-num_input{
+    margin-top: 10px;
+}
+
+
+#mySignin-num{
+    padding: 3%;
+    background: rgb(194,100,255);
+    background: linear-gradient(90deg, rgba(193, 100, 255, 0.568) 0%, #8c46e7 100%, rgba(255,255,255,1) 100%, rgba(57,64,65,1) 100%, rgba(208,208,208,1) 100%);
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+    color: white;
+}
+#signin-btn{
+    margin-top: 20px;
+    padding: 3%;
+    background: rgb(194,100,255);
+    background: linear-gradient(90deg, rgba(193, 100, 255, 0.515) 0%, #772adb 100%, rgba(255,255,255,1) 100%, rgba(57,64,65,1) 100%, rgba(208,208,208,1) 100%);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 550;
+    color: white;
+}
+#signin-btn:hover, #mySignin-num:hover{
+    cursor: pointer;
+    color: rgb(59, 25, 61);
+    background: rgb(158,50,228);
+    background: linear-gradient(90deg, rgba(158,50,228,1) 0%, rgba(228,186,255,1) 100%, rgba(23,0,93,1) 100%, rgba(255,255,255,1) 100%, rgba(57,64,65,1) 100%, rgba(208,208,208,1) 100%);
+    transition: .5s;
+}
+
+input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
