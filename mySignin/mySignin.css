@@ -1,5 +1,6 @@
 body{
     background-image: url("./bgimage.jpg");
+    background-size: cover;
 }
 input, select{
     width: 500px;
@@ -12,6 +13,7 @@ input, select{
 label{
     color: white;
     text-shadow: .5px 0 rgb(154, 154, 154);
+    cursor: pointer;
 }
 input:focus, select:focus{
     outline: none;
